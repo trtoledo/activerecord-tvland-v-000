@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 5) do
     t.string "name"
     t.integer "show_id"
     t.integer "actor_id"
+     t.string "catchphrase"
   end
 
   create_table "networks", force: :cascade do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 5) do
   create_table "shows", force: :cascade do |t|
     t.string "name"
     t.integer "network_id"
+    t.string "genre"
   end
 
 end
